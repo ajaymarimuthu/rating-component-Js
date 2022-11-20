@@ -18,7 +18,7 @@ const five=document.getElementById('five');
 // })
 // console.log(value);
 
-let btnValue;
+let btnValue=0;
 
 one.addEventListener('click',()=>{
      
@@ -99,6 +99,7 @@ function thankYouCard(btnValue){
     const p=document.createElement('p');
     p.classList.add("rating-text");
     p.innerHTML=`You selected ${btnValue} out  of 5`;
+    p.style.fontSize='smaller';
     div.append(p);
 
 
