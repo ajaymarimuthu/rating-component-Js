@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: grey;
+    background-color: black;
+}
+
+.h1-text{
+    color: white;
+}
+
+
+.container{
+    /* border: 2px solid gray; */
+    max-width: 25%;
+    margin: 100px auto;
+    padding: 2em;
+    background-color:rgb(47, 51, 75);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+/* .inner-container{
+    max-width: 75%;
+}
+  */
+.star-icon{
+    color: orange;
+    /* background-color: orange; */
+    max-width: 5%;
+  
+    border: none;
+  
+}
+
+.ratings-container{
+    margin-top: 2em;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.number{
+    /* border: 2px solid grey; */
+    background-color:#495057;
+    color:#868e96;
+    border-radius: 50%;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    margin-right: 1.25em;
+    font-size: smaller;
+}
+a:link{
+    color: gray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    /* background-color:red; */
+}
+
+a:hover {
+    color: white;
+    font-weight: bolder;
+    background-color:orange;
+     
+}
+a:active {
+    color: white;
+  
+    background-color:red;
+     
+}
+.button-container{
+    margin-top: 2em;
+  
+    
+}
+
+.btn{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 5em;
+    padding-right: 13em;
+    background-color: orange;
+    color: white;
+    font-weight: bold; 
+    border-radius: 1.3em;
+    /* border-top-left-radius: 1.3em;
+    border-top-right-radius: 1.3em;
+    border-bottom-left-radius: 1.3em;
+    border-bottom-right-radius: 1.3em; */
+    text-align: center;
+}
+
+.btn:active{
+    color: orange;
+    background-color: white;
+}
