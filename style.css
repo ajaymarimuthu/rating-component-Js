@@ -41,8 +41,8 @@ body{
 
 .ratings-container{
     margin-top: 2em;
-    /* display: flex;
-    flex-direction: row; */
+    display: flex;
+    flex-direction: row;
 }
 
 .number{
@@ -87,10 +87,11 @@ a:active {
 }
 
 .btn{
-    padding-top: 0.5em;
+    /* padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 5em;
-    padding-right: 13em;
+    padding-right: 13em; */
+    padding: 1em 8em;
     background-color: orange;
     color: white;
     font-weight: bold; 
@@ -105,4 +106,147 @@ a:active {
 .btn:active{
     color: orange;
     background-color: white;
+}
+
+
+
+
+@media screen and (max-width:1128px) {
+    .ratings-container{
+         
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .number{
+        /* border: 2px solid grey; */
+        text-align: center;
+        background-color:#495057;
+        color:#868e96;
+        border-radius: 50%;
+       
+      
+        text-decoration: none;
+        margin-bottom: 1.25em;
+        font-size: smaller;
+    }
+
+    
+}
+
+@media screen and (max-width:1258px) {
+
+   
+    .btn{
+
+        padding: 1em 7em;
+   
+    }
+    
+}
+
+
+@media screen and (max-width:1124px) {
+
+   
+    .btn{
+
+        padding: 1em 5em;
+   
+    }
+    
+}
+
+
+
+@media screen and  (max-width: 575.98px)
+ { 
+    .btn{
+
+        padding: 1em 1em;
+   
+    }
+  }
+
+/* // Small devices (landscape phones, less than 768px) */
+
+/* @media screen and  (max-width:780px) { 
+    .btn{
+
+        padding:0.5em 10px;
+   
+    }
+ }  */
+
+
+@media screen and  (max-width:930px) { 
+    .btn{
+
+        padding: 1em 2em;
+   
+    }
+ } 
+
+/* // Medium devices (tablets, less than 992px) */
+@media screen and  (max-width: 991.98px) { 
+    .btn{
+
+        padding: 1em 4em;
+   
+    }
+
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+
+
+
+
+/* -------------Thank you container----------------- */
+
+
+.thank-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ph-img{
+    margin-bottom: 1em;
+}
+
+.rating-text{
+    border: 2px solid grey;
+    color: orange;
+    padding: 0.2em 0.75em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.thank-text{
+    color: white;
+    font-weight: small;
+    letter-spacing:0.1em;
+    margin-bottom: 1em;
+}
+
+.thank-p-text{
+    font-size: 0.95em;
+    text-align: center;
+}
+
+ 
+
+.view-container{
+    display: contents;
+}
+
+.hide{
+    display: none;
+}
+
+.hide-container-1{
+    display: none;
 }
