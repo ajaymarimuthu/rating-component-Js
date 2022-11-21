@@ -1,85 +1,51 @@
 const btn=document.getElementById('submit-btn');
 const body=document.body;
  
-// const anchor=document.getElementsByName('a');
-// console.log(anchor);
-
 const one=document.getElementById('one');
 const two=document.getElementById('two');
 const three=document.getElementById('three');
 const four=document.getElementById('four');
 const five=document.getElementById('five');
 
-//  console.log(one.innerHTML);
-
-// number.forEach((val)=>{
-//     value=val;
-//     console.log(value);
-// })
-// console.log(value);
-
-let btnValue=0;
-
-one.addEventListener('click',()=>{
-     
-    // console.log(two.innerHTML);
-    const result=one.innerHTML;
-    // console.log(result);
-    btnValue=result;
-
-
-})
-
-
-// console.log(btnValue);
-
-two.addEventListener('click',()=>{
-     
-    const result=two.innerHTML;
-    // console.log(result);
-    btnValue=result;
+const numbers=document.querySelectorAll('.number');
 
  
-})
+
+let btnValue = 0;
+let count = 0;
+numbers.forEach((number) => {
 
 
-three.addEventListener('click',()=>{
-     
-    const result=three.innerHTML;
-    // console.log(result);
-    btnValue=result;
-
-})
-
-
-
-four.addEventListener('click',()=>{
-     
-    const result=four.innerHTML;
-    // console.log(result);
-    btnValue=result;
-
-
-})
-
-
-
-five.addEventListener('click',()=>{
-     
-    const result=five.innerHTML;
-    // console.log(result);
-    btnValue=result;
-
-
-})
- 
-btn.addEventListener('click', (e)=>{
-    // console.log(e.target);
-
+  number.addEventListener("click", (e) => {
+    count++;
     
-thankYouCard(btnValue);
-e.preventDefault();
+    console.log("inside listener ");
+
+   
+
+    removeColor();
+       
+      btnValue = number.innerHTML;
+      number.classList.add("active-btn"); 
+ 
+    e.preventDefault();
+  });
+});
+
+
+function removeColor(){
+    numbers.forEach(number=>{
+        number.classList.remove("active-btn");
+    })
+}
+
+
+btn.addEventListener('click',()=>{
+
+    thankYouCard(btnValue);
 })
+
+
 
 
 function thankYouCard(btnValue){
@@ -98,7 +64,7 @@ function thankYouCard(btnValue){
 
     const p=document.createElement('p');
     p.classList.add("rating-text");
-    p.innerHTML=`You selected ${btnValue} out  of 5`;
+    p.innerHTML=`You selected ${btnValue}  out  of  5`;
     p.style.fontSize='smaller';
     div.append(p);
 
@@ -134,3 +100,81 @@ function thankYouCard(btnValue){
  
  
 }
+
+
+
+
+
+
+// ----------------End of Main Code-----------------  
+
+
+
+
+
+// console.log(value);
+
+
+
+// let btnValue=0;
+
+// one.addEventListener('click',()=>{
+     
+//     // console.log(two.innerHTML);
+//     const result=one.innerHTML;
+//     // console.log(result);
+//     btnValue=result;
+
+
+// })
+
+
+// console.log(btnValue);
+
+// two.addEventListener('click',()=>{
+     
+//     const result=two.innerHTML;
+//     // console.log(result);
+//     btnValue=result;
+
+ 
+// })
+
+
+// three.addEventListener('click',()=>{
+     
+//     const result=three.innerHTML;
+//     // console.log(result);
+//     btnValue=result;
+
+// })
+
+
+
+// four.addEventListener('click',()=>{
+     
+//     const result=four.innerHTML;
+//     // console.log(result);
+//     btnValue=result;
+
+
+// })
+
+
+
+// five.addEventListener('click',()=>{
+     
+//     const result=five.innerHTML;
+//     // console.log(result);
+//     btnValue=result;
+
+
+// })
+ 
+// btn.addEventListener('click', (e)=>{
+//     // console.log(e.target);
+
+    
+// thankYouCard(btnValue);
+// e.preventDefault();
+// })

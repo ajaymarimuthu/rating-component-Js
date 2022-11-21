@@ -26,10 +26,7 @@ body{
     border-bottom-right-radius: 1em;
 }
 
-/* .inner-container{
-    max-width: 75%;
-}
-  */
+ 
 .star-icon{
     color: orange;
     /* background-color: orange; */
@@ -48,8 +45,8 @@ body{
 }
 
 .number{
-    /* border: 2px solid grey; */
-    background-color:#495057;
+ 
+    background-color:#212529;
     color:#868e96;
     border-radius: 50%;
     padding-top: 0.75em;
@@ -59,15 +56,15 @@ body{
     text-decoration: none;
     margin-right: 1.25em;
     font-size: smaller;
+    border: none;
 }
-a:link{
+/* a:link{
     color: gray;
     text-decoration: none;
 }
 
 a:visited {
     color: white;
-    /* background-color:red; */
 }
 
 a:hover {
@@ -81,11 +78,54 @@ a:active {
   
     background-color:red;
      
+} */
+
+  
+/* .number:link{
+    color: gray;
+    text-decoration: none;
+} */
+
+
+/* .number:visited {
+    color: white;
+    
+    background-color:red;
+} */
+
+
+.number:hover{
+    color: white;
+    
+    background-color: #adb5bd;
+
 }
+
+
+/* .number:active {
+    color: white;  
+   
+}   */
+
+
+
+
+.active-btn{
+    background-color: orange;
+    
+    color: white;
+}
+
+/* .not-active{
+    background-color: orange;
+    
+    color: white;
+} */
+
+
 .button-container{
     margin-top: 2em;
-  
-    
+   
 }
 
 .btn{
@@ -221,8 +261,8 @@ a:active {
 
  }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... }
+ /* Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) { ... } */
 
 
 
